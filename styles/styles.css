@@ -1,0 +1,243 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.row {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  width: 100%;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+}
+
+a {
+  text-decoration: none;
+  color: #000;
+}
+
+/* HEADER */
+.socials {
+  font-size: 1.6rem;
+  padding: 5px 15px;
+  border-radius: 10px;
+  background-color: lightgray;
+}
+
+.socials a:nth-of-type(1),
+.socials a:nth-of-type(2) {
+  margin-right: 5px;
+}
+
+nav a i {
+  transition-duration: 500ms;
+}
+
+nav a:hover {
+  color: #00a6ff;
+}
+
+nav {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  background-color: black;
+  padding: 15px 50px;
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+.ToTheTop a {
+  color: white;
+  font-size: 1.6rem;
+}
+
+header {
+  margin-bottom: 100px;
+}
+
+/* MAIN */
+main {
+  background-image: url("../images/placeholder.png");
+  height: 75vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+main .container h1 {
+  margin-bottom: 20px;
+}
+
+.links a:nth-of-type(1) {
+  margin-right: 30px;
+}
+
+.links a {
+  padding: 10px;
+  border: #000 1px solid;
+  border-radius: 20px;
+  background-color: lightgray;
+  transition-duration: 500ms;
+}
+
+.links a:hover {
+  background-color: black;
+  color: white;
+}
+
+/* PROJECTS */
+.projects {
+  margin: 20px auto;
+  width: 800px;
+  height: 400px;
+  background-color: #fff;
+  display: grid;
+  grid-template-columns: 400px 200px;
+  grid-row: auto auto;
+  grid-column-gap: 20px;
+  grid-row-gap: 20px;
+}
+
+.projects a {
+  background-image: url("../images/placeholder.png");
+  padding: 20px;
+  border-radius: 10px;
+  color: black;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 20px;
+  font-family: sans-serif;
+}
+
+.projects {
+  margin-top: 20px;
+}
+
+#projects {
+  margin-bottom: 20px;
+}
+
+#projects .container a {
+  padding: 10px;
+  border: #000 1px solid;
+  border-radius: 10px;
+}
+
+/* SKILLS */
+#skills {
+  margin-bottom: 20px;
+}
+
+.skill_Images {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
+.skillImg {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 0 50px;
+}
+
+.skillImg i {
+  font-size: 10rem;
+  margin: 20px;
+}
+
+/* ABOUT ME */
+.aboutMeImage img {
+  width: 100%;
+}
+
+.aboutMeText {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 50px;
+}
+
+.aboutMeText h1 {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+#aboutme {
+  margin-bottom: 20px;
+}
+
+/* CONTACT */
+.contact_img img {
+  max-width: 100%;
+}
+
+.forum {
+  width: 100%;
+  height: 100%;
+  padding: 10px;
+  margin: 10px;
+  background-color: #f2f2f2;
+  border-radius: 10px;
+}
+
+.forum input,
+.forum textarea,
+.forum fieldset {
+  border-radius: 10px;
+  padding: 10px;
+  margin-top: 10px;
+}
+
+.forum fieldset {
+  border: 0;
+  display: flex;
+  justify-content: center;
+}
+
+.forum input,
+.forum textarea {
+  width: 95%;
+  border-radius: 10px;
+  border: 1px solid #000;
+}
+
+.forum input[type="submit"] {
+  width: 95%;
+  padding: 10px;
+  border-radius: 10px;
+  border: 1px solid #000;
+  transition-duration: 500ms;
+}
+
+.forum input[type="submit"]:hover {
+  background-color: black;
+  color: white;
+}
+
+/* FOOTER */
+footer {
+  color: white;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  background-color: black;
+  padding: 15px 50px;
+}
