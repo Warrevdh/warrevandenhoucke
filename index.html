@@ -126,6 +126,13 @@
     <footer id="footer">
       <div class="container"><p>&copy; 2022 Warre Vandenhoucke</p></div>
     </footer>
-    <script src="js/functions.js"></script>
+    <script>
+    function sendMail() {    
+      var body = document.getElementById("cmessage").value;
+      var subject = document.getElementById("cname").value;
+  
+      window.location.replace(`mailto:hello@domain.com?body=${body}&subject=${subject} wants to contact you`);
+    }
+  </script>
   </body>
 </html>
