@@ -104,16 +104,37 @@
             >
               <h1>Contact me</h1>
               <p>
-                <label>Your Name: <input type="text" name="name" /></label>
+                <label
+                  >Your Name:
+                  <input
+                    type="text"
+                    name="name"
+                    required
+                    placeholder="Your name..."
+                /></label>
               </p>
               <p>
-                <label>Your Email: <input type="email" name="email" /></label>
+                <label
+                  >Your Email:
+                  <input
+                    type="email"
+                    name="email"
+                    required
+                    placeholder="Your email..."
+                /></label>
               </p>
               <p>
-                <label>Message: <textarea name="message"></textarea></label>
+                <label
+                  >Message:
+                  <textarea
+                    name="message"
+                    required
+                    placeholder="Your message..."
+                  ></textarea>
+                </label>
               </p>
               <p>
-                <button type="submit" id="submitBtn">Send</button>
+                <button type="submit" id="submitBtn">Submit</button>
               </p>
               <p id="text"></p>
             </form>

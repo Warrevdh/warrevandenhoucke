@@ -62,7 +62,7 @@ nav {
 }
 
 header {
-  margin-bottom: 100px;
+  margin-bottom: 70px;
 }
 
 /* MAIN */
@@ -162,6 +162,10 @@ main .container h1 {
 }
 
 /* ABOUT ME */
+.aboutMeImage{
+  width: 60%;
+}
+
 .aboutMeImage img {
   width: 100%;
 }
@@ -171,6 +175,7 @@ main .container h1 {
   flex-direction: column;
   justify-content: center;
   padding: 50px;
+  width: 50%;
 }
 
 .aboutMeText h1 {
@@ -184,6 +189,10 @@ main .container h1 {
 }
 
 /* CONTACT */
+.contact_img{
+  width: 50%;
+}
+
 .contact_img img {
   max-width: 100%;
 }
@@ -197,7 +206,7 @@ main .container h1 {
 }
 
 .forum {
-  width: 100%;
+  width: 50%;
   height: 100%;
   padding: 10px;
   margin: 10px;
@@ -221,9 +230,8 @@ main .container h1 {
 }
 
 .forum textarea {
-  resize: vertical;
-  height: 100px;
-  max-height: 200px;
+  resize: none;
+  height: 305px;
 }
 
 .forum button[type="submit"] {
@@ -248,4 +256,5 @@ footer {
   align-items: center;
   background-color: black;
   padding: 15px 50px;
+  margin-top: -10px;
 }
