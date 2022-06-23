@@ -16,7 +16,12 @@
     <header>
       <div class="container">
         <nav class="row" id="navbar">
-          <div class="ToTheTop"><a href="#"><i class="fa-solid fa-angles-up"></i> To the top <i class="fa-solid fa-angles-up"></i></a></div>
+          <div class="ToTheTop">
+            <a href="#"
+              ><i class="fa-solid fa-angles-up"></i> To the top
+              <i class="fa-solid fa-angles-up"></i
+            ></a>
+          </div>
           <div class="socials">
             <a
               href="https://www.linkedin.com/in/warre-vandenhoucke-27398b21a/"
@@ -39,8 +44,8 @@
       <div class="container">
         <h1>Warre Vandenhoucke</h1>
         <div class="links">
-        <a href="#aboutme">Get to know me</a>
-         <a href="#contact">Contact me</a>
+          <a href="#aboutme">Get to know me</a>
+          <a href="#contact">Contact me</a>
         </div>
       </div>
     </main>
@@ -60,9 +65,7 @@
           <div class="skillImg">
             <i class="fa-solid fa-code"></i> HTML & CSS
           </div>
-          <div class="skillImg">
-            <i class="fa-brands fa-js"></i> Javascript
-          </div>
+          <div class="skillImg"><i class="fa-brands fa-js"></i> Javascript</div>
           <div class="skillImg"><i class="fa-brands fa-java"></i> Java</div>
         </div>
       </div>
@@ -72,23 +75,27 @@
         <div class="row">
           <div class="aboutMeText">
             <h1>About me</h1>
-          <p>
-            My name is Warre Vandenhoucke. I am 18 years old and I am a Computer
-            Science student at Hogent. I've been in love with programming and
-            developing since high school and that's why I'm trying to persue a
-            career in it.
-          </p>
+            <p>
+              My name is Warre Vandenhoucke. I am 18 years old and I am a
+              Computer Science student at Hogent. I've been in love with
+              programming and developing since high school and that's why I'm
+              trying to persue a career in it.
+            </p>
           </div>
-          <div class="aboutMeImage"><img src="images/placeholder.png" alt=""></div>
+          <div class="aboutMeImage">
+            <img src="images/placeholder.png" alt="" />
+          </div>
         </div>
       </div>
     </section>
     <section id="contact">
       <div class="container">
         <div class="row">
-          <div class="contact_img"><img src="images/placeholder.png" alt="" /></div>
+          <div class="contact_img">
+            <img src="images/placeholder.png" alt="" />
+          </div>
           <div class="forum">
-            <form id="contact" method="post" action="mail.php">
+            <!-- <form id="contact" method="post" action="mail.php">
               <h1>Quick Contact</h>
               <fieldset>
                 <input required
@@ -117,10 +124,33 @@
                   id="contact-submit" value="Submit"
                 >
               </fieldset>
+            </form> -->
+            <form name="contact" method="POST" data-netlify="true">
+              <p>
+                <label>Your Name: <input type="text" name="name" /></label>
+              </p>
+              <p>
+                <label>Your Email: <input type="email" name="email" /></label>
+              </p>
+              <p>
+                <label
+                  >Your Role:
+                  <select name="role[]" multiple>
+                    <option value="leader">Leader</option>
+                    <option value="follower">Follower</option>
+                  </select></label
+                >
+              </p>
+              <p>
+                <label>Message: <textarea name="message"></textarea></label>
+              </p>
+              <p>
+                <button type="submit">Send</button>
+              </p>
             </form>
           </div>
+        </div>
       </div>
-    </div>
     </section>
     <footer id="footer">
       <div class="container"><p>&copy; 2022 Warre Vandenhoucke</p></div>
