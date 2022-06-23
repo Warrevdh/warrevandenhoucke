@@ -6,7 +6,9 @@ form.addEventListener("submit", (event) => {
     method: "POST",
     headers: { "Content-Type": "multipart/form-data" },
     body: new URLSearchParams(formData).toString(),
-  }).then(() => ntlFormSuccess());
+  })
+    .catch((error) => alert(error))
+    .then(() => ntlFormSuccess());
 });
 
 function ntlFormSuccess() {
