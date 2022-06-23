@@ -18,14 +18,10 @@ if(isset($_POST['submit'])) {
  . "You submitted the following message: " . "\n" . $_POST['message'] . "\n\n"
  . "Regards," . "\n";
  
- //Email headers
- $headers = "From: " . $fromEmail; // Client email, I will receive
- $headers2 = "From: " . $mailto; // This will receive client
- 
  //PHP mailer function
  
-  $result1 = mail($mailto, $subject, $message, $headers); // This email sent to My address
-  $result2 = mail($fromEmail, $subject2, $message2, $headers2); //This confirmation email to client
+  mail($mailto, $subject, $message); // This email sent to My address
+  mail($fromEmail, $subject2, $message2); //This confirmation email to client
 }
 
 ?>
