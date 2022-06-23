@@ -89,7 +89,7 @@
           <div class="contact_img"><img src="images/placeholder.png" alt="" /></div>
           <div class="forum">
             <!-- <form id="contact" method="post" action="mail.php" enctype="multipart/form-data"> -->
-              <form id="contact" method="post" action="mailto: warrevandenhoucke@hotmail.com?subject:Contact Form" enctype="multipart/form-data"></form>
+              <form id="contact" method="post" action="_top">
               <h1>Quick Contact</h>
               <fieldset>
                 <input required
@@ -106,13 +106,13 @@
                 />
               </fieldset>
               <fieldset>
-                <textarea required
+                <textarea required id="message"
                   name="message"
                   placeholder="Type your Message Details Here..."
                 ></textarea>
               </fieldset>
               <fieldset>
-                <input onclick="sendMail()"
+                <input 
                   type="submit"
                   name="submit"
                   id="contact-submit" value="Submit"
@@ -126,13 +126,6 @@
     <footer id="footer">
       <div class="container"><p>&copy; 2022 Warre Vandenhoucke</p></div>
     </footer>
-    <script>
-    function sendMail() {    
-      var body = document.getElementById("cmessage").value;
-      var subject = document.getElementById("cname").value;
-  
-      window.location.replace(`mailto:hello@domain.com?body=${body}&subject=${subject} wants to contact you`);
-    }
-  </script>
+    <script src="js/functions.js"></script>
   </body>
 </html>
