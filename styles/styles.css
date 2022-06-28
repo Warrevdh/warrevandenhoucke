@@ -333,6 +333,14 @@ footer {
     max-height: 95vh;
   }
 
+  .socials {
+    font-size: 3rem;
+  }
+
+  #ToTheTop a {
+    font-size: 3rem;
+  }
+
   #contact {
     width: 100%;
   }
