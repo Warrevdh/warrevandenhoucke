@@ -16,3 +16,15 @@ function ntlFormSuccess() {
   text.innerHTML = "Thank you for your submission";
   form.reset();
 }
+
+window.onscroll = () => {
+  const toTheTop = document.getElementById("ToTheTop");
+  const navbar = document.getElementById("navbar");
+  if (window.pageYOffset > 100) {
+    toTheTop.style.display = "inline";
+    navbar.style.justifyContent = "space-between";
+  } else {
+    toTheTop.style.display = "none";
+    navbar.style.justifyContent = "flex-end";
+  }
+};
